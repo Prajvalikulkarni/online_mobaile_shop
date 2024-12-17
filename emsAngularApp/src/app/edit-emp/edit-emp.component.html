@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>Edit Employee</h1>
+    <form (ngSubmit)="saveChanges()">
+      <div>
+        <label for="name">Name:</label>
+        <input id="name" [(ngModel)]="employee.employeeName" name="name" required />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" [(ngModel)]="employee.emailId" name="email" required />
+      </div>
+      <div>
+        <label for="contact">Contact:</label>
+        <input id="contact" [(ngModel)]="employee.employeeContactNumber" name="contact" required />
+      </div>
+      <div>
+        <label for="address">Address:</label>
+        <input id="address" [(ngModel)]="employee.employeeAddress" name="address" required />
+      </div>
+      <div>
+        <label for="gender">Gender:</label>
+        <input id="gender" [(ngModel)]="employee.employeeGender" name="gender" required />
+      </div>
+      <div>
+        <label for="skills">Skills:</label>
+        <input id="skills" [(ngModel)]="employee.employeeSkills" name="skills" required />
+      </div>
+      <button type="submit">Save Changes</button>
+      <button type="button" (click)="goBack()">Cancel</button>
+    </form>
+  </div>
+  

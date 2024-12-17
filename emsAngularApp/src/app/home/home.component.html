@@ -1,0 +1,31 @@
+<!-- Header Component -->
+<app-header></app-header>
+
+<!-- Home Page Content -->
+<div class="home-container">
+  <h1>Welcome to the Online Mobile Store</h1>
+  <p>Discover the best deals on the latest smartphones and accessories!</p>
+
+  <!-- Product Showcase -->
+  <div class="products-showcase">
+    <div class="products-card" *ngFor="let product of products">
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+      <strong>Price: ${{ product.price }}</strong>
+
+      <button type="button" (click)="onBuyNow()" class="add-to-cart-btn">
+        Buy Now
+        
+      </button>
+      
+      <div class="social-login mb-3 type--A">
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Static Section -->
+<div class="products-card static">
+  <h3>Our Mobile Shop</h3>
+</div>

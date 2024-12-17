@@ -1,0 +1,47 @@
+<app-header></app-header>
+
+<div class="container">
+    <h2>Mobile_Products</h2>
+    <form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)">
+        <div>
+            <label for="employeeName">brand:</label>
+            <input type="text" id="employeeName" name="employeeName" [(ngModel)]="employee.employeeName" required
+                minlength="3" />
+        </div>
+        <div>
+            <label for="emailId">model_name:</label>
+            <input type="email" id="emailId" name="emailId" [(ngModel)]="employee.emailId" required />
+        </div>
+        <div>
+            <label for="employeePassword">price:</label>
+            <input type="text" id="employeePassword" name="employeePassword" [(ngModel)]="employee.employeePassword"
+                required minlength="8" />
+        </div>
+        <div>
+            <label for="employeeContactNumber">ram:</label>
+            <input type="text" id="employeeContactNumber" name="employeeContactNumber"
+                [(ngModel)]="employee.employeeContactNumber" required pattern="[0-9]{10}" />
+        </div>
+        <div>
+            <label for="employeeAddress">storage:</label>
+            <input type="text" id="employeeAddress" name="employeeAddress" [(ngModel)]="employee.employeeAddress"
+                required />
+        </div>
+        <div>
+            <label for="employeeGender">color:</label>
+            <select id="employeeGender" name="employeeGender" [(ngModel)]="employee.employeeGender" required>
+                <option value="Male">Black</option>
+                <option value="Female">Blue</option>
+                <option value="Female">White</option>
+                <option value="Female">Gold</option>
+                
+            </select>
+        </div>
+        <div>
+            <label for="employeeSkills">Operating System:</label>
+            <input type="text" id="employeeSkills" name="employeeSkills" [(ngModel)]="employee.employeeSkills"
+                required />
+        </div>
+        <button type="submit">Save</button>
+    </form>
+</div>

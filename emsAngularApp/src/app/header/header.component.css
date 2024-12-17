@@ -1,0 +1,91 @@
+/* Style for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #21cfc7, #df10cd); /* Gradient background */
+    color: white;
+    padding: 15px 30px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Style for the container of navbar items */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Style for the brand name/logo */
+  .navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    color: #ffcc00; /* Golden color on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+  }
+  
+  /* Style for the navbar menu */
+  .navbar-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  /* Style for each menu link */
+  .navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Underline effect on hover */
+  .navbar-menu a:hover {
+    color: #ffcc00;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  .navbar-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffcc00;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Underline animation on hover */
+  .navbar-menu a:hover::after {
+    transform: scaleX(1); /* Expand underline on hover */
+  }
+  
+  body{
+    background-color: lightgreen;
+  }

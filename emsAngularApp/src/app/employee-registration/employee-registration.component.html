@@ -1,0 +1,89 @@
+<div class="container">
+    <h2>Employee Registration</h2>
+    <form (ngSubmit)="onSubmit()" #employeeForm="ngForm">
+      <div class="form-group">
+        <label for="name">brand</label>
+        <input
+          type="text"
+          id="name"
+          class="form-control"
+          name="employeeName"
+          [(ngModel)]="employee.employeeName"
+         
+        />
+      </div>
+       <div class="form-group">
+        <label for="email">model_name</label>
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          name="emailId"
+          [(ngModel)]="employee.emailId"
+          
+        />
+      </div>
+      <div class="form-group">
+        <label for="password">order_date</label>
+        <input
+          type="text"
+          id="password"
+          class="form-control"
+          name="employeePassword"
+          [(ngModel)]="employee.employeePassword"
+         
+        />
+      </div>
+      <div class="form-group">
+        <label for="contact">Contact Number</label>
+        <input
+          type="text"
+          id="contact"
+          class="form-control"
+          name="employeeContactNumber"
+          [(ngModel)]="employee.employeeContactNumber"
+          
+        />
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea
+          id="address"
+          class="form-control"
+          name="employeeAddress"
+          [(ngModel)]="employee.employeeAddress"
+         
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="gender">status</label>
+        <select
+          id="gender"
+          class="form-control"
+          name="employeeGender"
+          [(ngModel)]="employee.employeeGender"
+          
+        >
+          <option value="">Select</option>
+          <option value="Male">Pending</option>
+          <option value="Female">Pending</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="skills">order_date</label>
+        <input
+          type="text"
+          id="skills"
+          class="form-control"
+          name="employeeSkills"
+          [(ngModel)]="employee.employeeSkills"
+         
+        />
+      </div>
+      <button type="submit" class="btn btn-primary" >
+        Add_Details
+      </button>
+    </form>
+  </div>
+  

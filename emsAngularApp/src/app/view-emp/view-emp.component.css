@@ -1,0 +1,153 @@
+
+/* Container */
+.container {
+margin: 20px auto;
+padding: 20px;
+max-width: 1200px;
+background-color: #f9f9f9;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+font-family: Arial, sans-serif;
+}
+
+/* Table */
+.styled-table {
+width: 100%;
+border-collapse: collapse;
+margin: 20px 0;
+font-size: 16px;
+text-align: left;
+}
+
+/* Header Styling */
+.styled-table thead tr {
+background-color: #007BFF;
+color: #ffffff;
+text-align: center;
+}
+
+/* Table Rows */
+.styled-table th, .styled-table td {
+padding: 12px 15px;
+border: 1px solid #ddd;
+}
+
+.styled-table tbody tr {
+border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+border-bottom: 2px solid #007BFF;
+}
+
+.styled-table tbody tr:hover {
+background-color: #f1f1f1;
+}
+
+/* Button Styling */
+.btn {
+padding: 8px 12px;
+margin: 0 5px;
+font-size: 14px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.edit-btn {
+background-color: #28a745;
+color: #fff;
+transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+background-color: #218838;
+}
+
+.delete-btn {
+background-color: #dc3545;
+color: #fff;
+transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.styled-table {
+font-size: 14px;
+}
+.btn {
+font-size: 12px;
+padding: 6px 10px;
+}
+}
+
+
+
+/* Add any additional CSS styling as needed */
+.container {
+padding: 20px;
+}
+
+.styled-table {
+width: 100%;
+border-collapse: collapse;
+font-size: 16px;
+}
+
+.styled-table th, .styled-table td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: left;
+}
+
+.styled-table th {
+background-color: #4CAF50;
+color: white;
+}
+
+.styled-table tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+input {
+width: 100%;
+padding: 5px;
+font-size: 14px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.btn {
+padding: 5px 10px;
+margin: 2px;
+cursor: pointer;
+}
+
+.save-btn {
+color: white;
+background-color: green;
+}
+
+.cancel-btn {
+color: white;
+background-color: gray;
+}
+
+.edit-btn {
+color: white;
+background-color: blue;
+}
+
+.delete-btn {
+color: white;
+background-color: red;
+border: none;
+}

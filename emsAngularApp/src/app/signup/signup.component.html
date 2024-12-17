@@ -1,0 +1,24 @@
+<p>signup works!</p>
+
+
+<!-- Buy Now Button -->
+<button (click)="onBuyNow()">Buy Now</button>
+
+<!-- Payment Form -->
+<div *ngIf="showPaymentForm" id="payment-section">
+  <h3>Enter Payment Details</h3>
+  <form (ngSubmit)="submitPayment()">
+
+    
+    <label for="card-number">Card Number:</label>
+    <input type="text" id="card-number" [(ngModel)]="payment.cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+
+    <label for="expiry">Expiry Date:</label>
+    <input type="month" id="expiry" [(ngModel)]="payment.expiry" name="expiry" required>
+
+    <label for="cvv">CVV:</label>
+    <input type="password" id="cvv" [(ngModel)]="payment.cvv" name="cvv" placeholder="123" required>
+
+    <button type="submit">Submit Payment</button>
+  </form>
+</div>
